@@ -121,6 +121,23 @@ keys.addEventListener("click", e => {
                 }
             
         }
+        else if(action==="decimal"){
+            if(displayedNum.trim()!=="0" && displayedNum!=="SYNTAX ERROR")
+                {
+                    if(displayedNum.includes("."))
+                        {
+                          let lastIndex=displayedNum.lastIndexOf(".")
+                          if(lastIndex<displayedNum.lastIndexOf("+") || lastIndex<displayedNum.lastIndexOf("-") ||
+                            lastIndex<displayedNum.lastIndexOf("/") || lastIndex<displayedNum.lastIndexOf("*"))
+                          {
+                            display.textContent = displayedNum + keyContent
+                          }
+                        }
+                    else
+                        display.textContent = displayedNum + keyContent
+                }
+            
+        }
          else  {
             if(displayedNum.trim()=="0" || displayedNum=="SYNTAX ERROR")
                 {
