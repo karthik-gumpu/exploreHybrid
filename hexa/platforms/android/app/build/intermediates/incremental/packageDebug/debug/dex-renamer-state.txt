@@ -1,0 +1,4 @@
+#Fri Oct 26 10:20:19 IST 2018
+base.0=D\:\\hybridapps\\helloworld\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
