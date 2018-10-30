@@ -1,0 +1,43 @@
+body {
+    background-attachment:fixed;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    background-color: cadetblue;
+}
+
+#result{
+    width: 100%;
+    height: 150px;
+    background-color: orchid;
+    font-size: 30px;
+    font-size-adjust: initial;
+    text-align: end;
+    float: right;
+    font-size: 55px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 5px;
+    margin-bottom: 35px;
+
+}
+#empty{
+    visibility: hidden;
+}
+.btn{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    font-size: 30px;
+
+}
+
+
+#keys{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+
