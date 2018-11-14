@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="main">
+               <div class="wheather">
+                    <img class="img" class="irc_mi" src="https://git.reviewboard.kde.org/media/uploaded/files/2015/07/30/019abdbb-80cf-4935-8d6d-0c3e6927d2b3__gps_fixed_600.png" 
+                    width="22" height="23"/><br/>
+                   <h3>Enter city name</h3>
+                   <input type="text" name="weather"/>
+               </div>
+               <div class="display">
+                   <img class="cross" 
+                    src="data:image/png;base64,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"
+                    width="20" height="20" >
+                   <p class="name"></p>
+                   <p class="humidity"></p>
+                   <p class="description"></p>
+               </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
