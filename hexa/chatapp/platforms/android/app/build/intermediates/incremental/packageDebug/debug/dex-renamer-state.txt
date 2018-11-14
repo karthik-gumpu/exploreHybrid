@@ -1,0 +1,4 @@
+#Mon Nov 12 16:26:06 IST 2018
+base.0=D\:\\hybridApps\\chatapp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
